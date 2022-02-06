@@ -42,9 +42,11 @@ export const currencyReducer = (state: CurrencyState = initialState, action: Cur
 
     switch (action.type) {
         case ACTIONS_TYPE.CHANGE_CURRENCY_FIELD_TYPE:
+            return state
         // Зануляем  amountOfBYN, amountOfCurrency для коректного расчета при смене напраления
         case ACTIONS_TYPE.CHANGE_CHANGE_ACTION:
-        // Зануляем  amountOfBYN, amountOfCurrency для коректного расчета при смене напраления
+            // Зануляем  amountOfBYN, amountOfCurrency для коректного расчета при смене напраления
+            return state
         case ACTIONS_TYPE.CHANGE_CURRENT_CURRENCY:
             return {
                 ...state,

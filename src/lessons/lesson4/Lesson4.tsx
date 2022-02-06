@@ -1,9 +1,7 @@
 import React from 'react'
-import './lesson_4';
 import {CreatePromise, RejectPromise, ResolvePromise} from "./lesson_4";
 
-const Lesson4 = () => {
-
+export const Lesson4 = () => {
 
     return (
         <div>
@@ -17,4 +15,3 @@ const Lesson4 = () => {
     );
 }
 
-export default Lesson4;

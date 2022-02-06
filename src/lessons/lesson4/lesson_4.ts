@@ -110,54 +110,54 @@
 
 // let
 //
-// type handlePromiseType = {
-//     promise: null | Promise<any>
-//     resolve: null | Function
-//     reject: null | Function
-//     onSuccess: (data: string) => void
-//     onError: (data: string) => void
-// }
-//
-// export let handlePromise: handlePromiseType = {
-//     promise: null,
-//     resolve: null,
-//     reject: null,
-//     onSuccess: (paramName: string) => {
-//         console.log(`Promise is resolved with data: ${paramName}`)
-//     },
-//     onError: (paramName: string) => {
-//         console.log(`Promise is rejected with error: ${paramName}`)
-//     },
-// }
-//
-//
-// export const CreatePromise = () => {
-//
-//     const somePromise: Promise<any> = new Promise((res, rej) => {
-//
-//         handlePromise.resolve = res
-//         handlePromise.reject = rej
-//
-//     })
-//
-//     handlePromise.promise = somePromise
-//     handlePromise.promise
-//         .then(handlePromise.onSuccess)
-//         .catch(handlePromise.onError)
-//
-//     console.log(handlePromise)
-//
-// }
-// export const ResolvePromise = () => {
-//
-//     handlePromise.resolve && handlePromise.resolve('res')
-//     // console.log(handlePromise)
-//
-// }
-// export const RejectPromise = () => {
-//     handlePromise.reject && handlePromise.reject('rej')
-//     // console.log(handlePromise)
-// }
+type handlePromiseType = {
+    promise: null | Promise<any>
+    resolve: null | Function
+    reject: null | Function
+    onSuccess: (data: string) => void
+    onError: (data: string) => void
+}
+
+export let handlePromise: handlePromiseType = {
+    promise: null,
+    resolve: null,
+    reject: null,
+    onSuccess: (paramName: string) => {
+        console.log(`Promise is resolved with data: ${paramName}`)
+    },
+    onError: (paramName: string) => {
+        console.log(`Promise is rejected with error: ${paramName}`)
+    },
+}
+
+
+export const CreatePromise = () => {
+
+    const somePromise: Promise<any> = new Promise((res, rej) => {
+
+        handlePromise.resolve = res
+        handlePromise.reject = rej
+
+    })
+
+    handlePromise.promise = somePromise
+    handlePromise.promise
+        .then(handlePromise.onSuccess)
+        .catch(handlePromise.onError)
+
+    console.log(handlePromise)
+
+}
+export const ResolvePromise = () => {
+
+    handlePromise.resolve && handlePromise.resolve('res')
+    // console.log(handlePromise)
+
+}
+export const RejectPromise = () => {
+    handlePromise.reject && handlePromise.reject('rej')
+    // console.log(handlePromise)
+}
 
 
 // Task 06
@@ -195,43 +195,43 @@
 // второй промис возвращает объект {age: 16} через 3 с, а третий {city: ''} через 4с.
 // Получите результаты работы промисов, объедините свойства объектов
 // и выведите в консоль {name: 'Anna', age: 16, city: ''}
-
-let promise1 = new Promise((resolve, reject) => {
-
-    setTimeout(resolve, 2000, {name: "Anna"})
-
-})
-
-let promise2 = new Promise((resolve, reject) => {
-
-    setTimeout(resolve, 3000, {age: 16})
-
-})
-let promise3 = new Promise((resolve, reject) => {
-
-    setTimeout(resolve, 4000, {city: ''})
-
-})
-let promise4 = new Promise((resolve, reject) => {
-
-    setTimeout(resolve, 4000, {
-        Nastya: 'Robot',
-        location: {
-            country: 'BL',
-            city: "Minsk",
-        }
-    })
-
-})
-
-
-Promise.all([promise1, promise2, promise3, promise4]).then((data: any) => {
-
-    console.log(Object.assign({}, ...data))
-
-})
-
-
-// just a plug
-export default () => {
-};
+//
+// let promise1 = new Promise((resolve, reject) => {
+//
+//     setTimeout(resolve, 2000, {name: "Anna"})
+//
+// })
+//
+// let promise2 = new Promise((resolve, reject) => {
+//
+//     setTimeout(resolve, 3000, {age: 16})
+//
+// })
+// let promise3 = new Promise((resolve, reject) => {
+//
+//     setTimeout(resolve, 4000, {city: ''})
+//
+// })
+// let promise4 = new Promise((resolve, reject) => {
+//
+//     setTimeout(resolve, 4000, {
+//         Nastya: 'Robot',
+//         location: {
+//             country: 'BL',
+//             city: "Minsk",
+//         }
+//     })
+//
+// })
+//
+//
+// Promise.all([promise1, promise2, promise3, promise4]).then((data: any) => {
+//
+//     console.log(Object.assign({}, ...data))
+//
+// })
+//
+//
+// // just a plug
+// export default () => {
+// };

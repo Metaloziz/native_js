@@ -1,6 +1,7 @@
+import React from 'react'
+
 export {}
 
-console.log('Lesson 5');
 
 // Keyword - this
 // https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/this
@@ -27,23 +28,44 @@ console.log('Lesson 5');
 // Дан объект someObj, реализуйте функцию greeting и присвойте ее ключу объекта с аналогичным именем.
 // Функция должна вернуть строку `My name is ${name}. I am ${age}`, где name и age берутся из свойств объекта
 
-type someObjType = {
-    name: string;
-    age: number;
-    greeting: ()=>string
-}
+////////////////////////////////////////////////
+// type someObjType = {
+//     name: string;
+//     age: number;
+//     greeting: ()=>string
+// }
+//
+// function greeting  (this: someObjType)  {
+//     let {name, age} = this
+//     return `My name is ${name}. I am ${age}`
+// }
+//
+// const someObj:someObjType = {
+//     name: 'Eugene',
+//     age: 32,
+//     greeting: greeting
+// }
+//
+// console.log(someObj.greeting())
+//
+//
+//
+// const someObj2:someObjType = {
+//     name: 'Eugene',
+//     age: 32,
+//     greeting: ()=>{
+//         return `My name is ${this.name}. I am ${this.age}`
+//     }
+// }
+//
+// console.log(someObj2.greeting())
 
-const greeting = () => {
 
-  // @ts-ignore
-    return `My name is ${this.name}. I am ${this.age}`
-}
+//можем ли мы создать стрелочную функцию отдельно и присвоить свойству объекта ?
 
-let someObj:someObjType = {
-    name: 'Eugene',
-    age: 32,
-    greeting: greeting
-}
+// const greeting2 = () => {
+//     return `My name is ${name}. I am ${age}`
+// }
 
 
 
@@ -56,6 +78,43 @@ let someObj:someObjType = {
 // set current count; - принимает и присваивает значение счетчику
 // rest current count - устанавливает значение счетчика равным 0
 // все методы должны ссылаться на сам объект
+
+// type newObjType = {
+//     counter: number
+//     getCurrentCount: ()=>void
+//     increment: ()=>void
+//     decrement: ()=>void
+//     setCurrentCount: ()=>void
+//     restCurrentCount: ()=>void
+// }
+//
+// let newObj:newObjType = {
+//     counter: 0,
+//     getCurrentCount (){
+//         console.log(this.counter)
+//     },
+//     increment() {
+//         this.counter = this.counter + 1
+//     },
+//     decrement(){
+//         this.counter = this.counter - 1
+//     },
+//     setCurrentCount(){
+//         let newCounter = prompt('type counter')
+//         if(newCounter){
+//             this.counter = Number(newCounter)
+//         }
+//     },
+//     restCurrentCount(){
+//         this.counter = 0
+//     }
+// }
+// // короче function(){} ссылается на объект вызова, на окружение
+// // @ts-ignore
+// window.counter = 10
+// // @ts-ignore
+// window.newObj = newObj
+
 
 // Task 03
 // переделайте код из Task 02, что бы сработал следующий код:
@@ -93,3 +152,14 @@ let someObj:someObjType = {
 
 // just a plug
 // export default () => {};
+
+
+
+export const HomeWork5 = () => {
+    return (
+        <h2>
+           LESSON 5
+        </h2>
+    );
+}
+
