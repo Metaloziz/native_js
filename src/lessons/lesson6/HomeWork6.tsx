@@ -1,5 +1,29 @@
+import React from 'react'
+
+
+interface Interface {
+    name: string
+    age: number
+}
+
+class Class implements Interface{
+   name = '';
+   age = 6;
+
+    constructor(name: string, age: number) {
+        this.name = name
+        this.age = age
+    }
+}
+
+
+
+export const HomeWork6 = () => {
+
 console.log('Lesson 6');
-export {}
+
+
+
 // Class
 // https://learn.javascript.ru/classes
 // https://medium.com/front-stories/%D0%BA%D0%B0%D0%BA-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%D1%8E%D1%82-%D0%BA%D0%BB%D0%B0%D1%81%D1%81%D1%8B-%D0%B2-javascript-7978c0003f1d
@@ -36,3 +60,11 @@ export {}
 // Определить функции переназначения марки и грузоподъемности.
 
 // just a plug
+
+    return (
+        <h2>
+            LESSON 6
+        </h2>
+    );
+}
+
