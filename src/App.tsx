@@ -9,17 +9,17 @@ import {HomeWork6} from "./lessons/lesson6/HomeWork6";
 // import './lessons/lesson8/lesson8';
 
 function App() {
-    return (
-        <div className="container">
-            {/*<Lesson1 />*/}
-            {/*/!*<Lesson3 />*!/*/}
-            {/*<HomeWork5/>*/}
-            <HomeWork6/>
-            {/*<Lesson4/>*/}
-            {/*<Lesson3/>*/}
-            {/*<Lesson8/>*/}
-        </div>
-    );
+  return (
+    <div className="container">
+      {/*<Lesson1 />*/}
+      {/*/!*<Lesson3 />*!/*/}
+      {/*<HomeWork5/>*/}
+      <HomeWork6/>
+      {/*<Lesson4/>*/}
+      {/*<Lesson3/>*/}
+      {/*<Lesson8/>*/}
+    </div>
+  );
 }
 
 export default App;
