@@ -310,7 +310,7 @@ window.ONE = One
 window.helperObj =helperObj
 
 // @ts-ignore
-window.someFunction = someFunction
+window.someFunction = sumFromObject
 
 
 
