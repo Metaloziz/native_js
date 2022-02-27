@@ -46,52 +46,52 @@
 // Рекурсивно
 // В цикле
 //
-// const tree = {
-//   valueNode: 3,
-//   next: [
-//     {
-//       valueNode: 1,
-//       next: null
-//     },
-//     {
-//       valueNode: 3,
-//       next: null
-//     },
-//     {
-//       valueNode: 2,
-//       next: null
-//     },
-//     {
-//       valueNode: 2,
-//       next: [
-//         {
-//           valueNode: 1,
-//           next: null
-//         },
-//         {
-//           valueNode: 5,
-//           next: null
-//         }
-//       ]
-//     }]
-// };
-//
-// const sumFromObject = (obj) => {
-//
-//   let sum = 0
-//
-//   for (const objKey in obj) {
-//
-//     if (typeof obj[objKey] === 'object') {
-//       sum += sumFromObject(obj[objKey])
-//     } else {
-//       sum += obj[objKey]
-//     }
-//   }
-//   return sum
-// }
-//
-//
+const tree = {
+  valueNode: 3,
+  next: [
+    {
+      valueNode: 1,
+      next: null
+    },
+    {
+      valueNode: 3,
+      next: null
+    },
+    {
+      valueNode: 2,
+      next: null
+    },
+    {
+      valueNode: 2,
+      next: [
+        {
+          valueNode: 1,
+          next: null
+        },
+        {
+          valueNode: 5,
+          next: null
+        }
+      ]
+    }]
+};
+
+const sumFromObject = (obj) => {
+
+  let sum = 0
+
+  for (const objKey in obj) {
+
+    if (typeof obj[objKey] === 'object') {
+      sum += sumFromObject(obj[objKey])
+    } else {
+      sum += obj[objKey]
+    }
+  }
+  return sum
+}
+
+
 // console.log(sumFromObject(tree));
 
 // const function1 = (arr) => {
@@ -102,20 +102,18 @@
 //
 // 	return sum
 // }
-//
-// console.log(function1(arr))
-//
+
+// console.log(function1(tree))
 
 
 // Task 5
 // исправить код, что бы работал правильно
-
-
-// for (var i = 0; i < 10; i++) {
-//   console.log(i)
-// 	setTimeout(function () {
-// 		console.log(i);
-// 	}, 100);
+// var i = 0
+//
+// for (i = 0; i < 10; i++) {
+//   setTimeout(() => {
+//     console.log(i);
+//   }, 0);
 // }
 
 // Task 6
@@ -126,9 +124,9 @@
 //   this.author = author;
 //   return this;
 // }
-// // let a = "Учебник javascript"
-// // let b = "Петр Сергеев"
-//
+// let a = "Учебник javascript"
+// let b = "Петр Сергеев"
+
 // function Foo(Book, a, b) {
 // return Book(a,b)
 // }
@@ -154,7 +152,7 @@
 // let result2 = result(2)
 //
 // console.log(result2)
-//
+// //
 // const f = (...arg) => {
 //
 //   let sum = 0
@@ -178,19 +176,19 @@
 // Реализовать функцию f: f(1)(2)(3)() -> 6, f(0)(3)(1)(5)() -> 8
 
 // let sum = 0;
+
+// let sum = 0
 //
-// function f(...args) {
+// const foo = (number = 0) => {
 //
-//   // console.log(sum)
-//   if (args.length === 0) {
-//     return sum
-//   } else {
-//     sum += args[0]
-//     return f
-//   }
-// }
+//   if (number === 0) return sum
 //
-// console.log(f(1)(2)(3)(6)())
+//   sum += number
+//   return foo
+//
+// };
+//
+// console.log(foo(1)(2)(3)(6)(5)())
 
 
 // let allSum = 0
@@ -211,28 +209,25 @@
 // };
 //
 // console.log(sum(1)(2)())
-//
-//
 
 
 // Task 9
 // Реализовать функции seven, plus, one, five, minus, two так, что бы следующие вызовы работали seven(plus(one())) -> 8. five(minus(two())) -> 3
 
-// const seven = (...a) => {
-//   return 7 + a[0]
+// const seven = (a = 0) => {
+//   return 7 + a
 // }
 //
-// const five = (...a) => {
+// const five = (a = 0) => {
 //   return 5 + a
 // }
 //
-//
 // const minus = (a) => -a
 //
-// const one = (a) => 1 + a
+// const one = (a = 0) => 1 + a
 //
 //
-// const two = (a) => 2 + a
+// const two = (a = 0) => 2 + a
 //
 //
 // const plus = (a) => 0 + a
@@ -266,6 +261,35 @@
 
 // Task 11
 // Есть строка, состоящая из разных скобок - str = "())({}}{()][][", написать функцию проверки закрыты ли все.
+
+// let str = "())({}}{()][]["
+//
+// function checkPair(str) {
+//   if (str.length % 2) return false
+//   // пары скобок
+//   let br = "(){}[]";
+//   // стек открывающих скобок
+//   let stek = [];
+//   for (let i = 0; i < str.length; i++) {
+//     let index = br.indexOf(str[i]);
+//     // если скобка закрывающая
+//     if (index % 2) {
+//       // если открывающих скобок нет, плохо
+//       if (stek.length === 0) return false;
+//       // берем последнюю скобку из открывающих
+//       let lastBracket = stek.pop()
+//       // если открывающая не соответствует закрывающей - плохо
+//       if (lastBracket !== br[index - 1]) return false
+//     } else {
+//       // если открывающая, добавляем ее в стек.
+//       stek.push(str[i])
+//     }
+//   }
+//   return stek.length === 0
+//   }
+
+// console.log(checkPair(str))
+
 
 // let str = "())("
 //
@@ -394,6 +418,26 @@
 // в которой повторяющиеся буквы заменены количеством повторений.
 // rle('AVVVBBBVVXDHJFFFFDDDDDDHAAAAJJJDDSLSSSDDDD'); // => 'AV3B3V2XDHJF4D6HA4J3D2SLS3D4'
 
+let str = 'AVVVBBBVVXDHJFFFFDDDDDDHAAAAJJJDDSLSSSDDDD'
+
+function rle(str) {
+  let newStr = [];
+  let count = 0;
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] === newStr[newStr.length-1]) {
+      count +=1
+    } else {
+      count && newStr.push(count+1)
+      newStr.push(str[i]);
+      count = 0;
+    }
+  }
+  count && newStr.push(count+1)
+  return newStr.join('');
+}
+
+console.log(rle(str))
+
 // Task 18
 // Реализуйте функцию isSorted(), которая возвращает true или false в зависимости о того, отсортирован ли переданный ей числовой массив.
 
@@ -420,41 +464,41 @@
 // missing([5, 1, 4, 2])               // 3
 // missing([1, 2, 3, 4])               // undefined
 
-let arr = [1, 2, 3, 5, 6]
+let arr = [1, 2, 3, 4, 6]
 
-function quickSort(array) {
-
-  if (array.length <= 1) {
-    return array
-  }
-  let helpIndex = Math.floor(array.length / 2)
-  let helpItem = array[helpIndex]
-  let less = []
-  let greatest = []
-  for (let index = 0; index < array.length; index++) {
-    if (index === helpIndex) continue
-    if (array[index] < helpItem) {
-      less.push(array[index])
-    } else {
-      greatest.push(array[index])
-    }
-  }
-  return [...quickSort(less), helpItem, ...quickSort(greatest)]
-}
-
-const findeMissingNumber = (array) => {
-  let missingNumber = array.filter((el, index, arr) => el > arr[index + 1])
-  return missingNumber
-}
+// function quickSort(array) {
+//
+//   if (array.length <= 1) {
+//     return array
+//   }
+//   let helpIndex = Math.floor(array.length / 2)
+//   let helpItem = array[helpIndex]
+//   let less = []
+//   let greatest = []
+//   for (let index = 0; index < array.length; index++) {
+//     if (index === helpIndex) continue
+//     if (array[index] < helpItem) {
+//       less.push(array[index])
+//     } else {
+//       greatest.push(array[index])
+//     }
+//   }
+//   return [...quickSort(less), helpItem, ...quickSort(greatest)]
+// }
+//
+// const findeMissingNumber = (array) => {
+//   let missingNumber = array.filter((el, index, arr) => el > arr[index + 1])
+//   return missingNumber
+// }
 
 // console.log(findeMissingNumber(arr))
 
 const sum = (arr) => {
   let sumNumbers = arr.reduce((acc, el) => acc + el)
   let secondSum = ((1 + arr[arr.length - 1]) * arr[arr.length - 1]) / 2
-  return sumNumbers - secondSum
+  return secondSum - sumNumbers
 }
-//
+
 // console.log(sum(arr))
 
 
@@ -490,14 +534,18 @@ const sum = (arr) => {
 // Task 21
 // Что выведет консоль?
 
-Promise
-	.resolve()
-	.then(() => console.log(1))
-	.then(() => console.log(2))
-	.then(() => console.log(3));
+// Promise
+// 	.resolve()
+// 	.then(() => console.log(1))
+// 	.then(() => console.log(2))
+// 	.then(() => console.log(3));
+//
+// Promise
+// 	.resolve()
+// 	.then(() => console.log(4))
+// 	.then(() => console.log(5))
+// 	.then(() => console.log(6));
 
-Promise
-	.resolve()
-	.then(() => console.log(4))
-	.then(() => console.log(5))
-	.then(() => console.log(6));
+
+
+// https://3-info.ru/post/16934
