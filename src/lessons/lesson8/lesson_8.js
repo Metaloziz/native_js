@@ -34,11 +34,11 @@
 // Реализуйте функцию, которая принимает следующие аргументы (строки) '*', '1', 'b', '1c', и возвращает строку '1*b*1c'
 
 
-// const someFunction = (a,b,c,d) => {
-// 	return b + a + c + a + d
-// }
-//
-// console.log(someFunction("*", '1', 'b', '1c'))
+const someFunction = (a, b, c, d) => {
+  return b + a + c + a + d
+}
+
+console.log(someFunction("*", '1', 'b', '1c'))
 
 
 // Task 4
@@ -424,15 +424,15 @@ function rle(str) {
   let newStr = [];
   let count = 0;
   for (let i = 0; i < str.length; i++) {
-    if (str[i] === newStr[newStr.length-1]) {
-      count +=1
+    if (str[i] === newStr[newStr.length - 1]) {
+      count += 1
     } else {
-      count && newStr.push(count+1)
+      count && newStr.push(count + 1)
       newStr.push(str[i]);
       count = 0;
     }
   }
-  count && newStr.push(count+1)
+  count && newStr.push(count + 1)
   return newStr.join('');
 }
 
@@ -545,7 +545,6 @@ const sum = (arr) => {
 // 	.then(() => console.log(4))
 // 	.then(() => console.log(5))
 // 	.then(() => console.log(6));
-
 
 
 // https://3-info.ru/post/16934

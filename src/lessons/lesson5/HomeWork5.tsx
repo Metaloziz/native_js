@@ -121,7 +121,7 @@ export const HomeWork5 = () => {
 // Task 03
 // переделайте код из Task 02, что бы сработал следующий код:
 // counter.setCurrentCount(10).increment().increment().increment().decrement().getCurrentCount() // 12
-//
+
 // type newObjType = {
 //     counter: number
 //     getCurrentCount: ()=>void
@@ -164,6 +164,7 @@ export const HomeWork5 = () => {
 // Task 04
 // Написать функцию конструктор myFirstConstructorFunc которая принимает 2 параметра name и age и возвращает объект
 // у которого будут эти свойства и метод greeting из Task 01
+
 // type someObjType = {
 //     name: string;
 //     age: number;
@@ -189,7 +190,7 @@ export const HomeWork5 = () => {
 
 
 // Task 05 есть 2 объекта One и Two. С помощью bind и метода sayHello заставьте поздороваться объект One
-//
+
 // let One = {name: 'One'};
 // let Two = {
 //     name: 'Two',
@@ -206,7 +207,8 @@ export const HomeWork5 = () => {
 // setAge - устанавливает полученное значение в свойство age объекта
 // greeting - используется функция sayHello из Task 05
 // можно использовать @ts-ignore
-//
+
+
 // let helperObj = {
 //
 //     name: '',
@@ -251,6 +253,7 @@ export const HomeWork5 = () => {
 
 // 2) Напишите функцию которая принимает первым аргументом объект One, а вторым helperObj. Данная функция
 // возвращает другую функцию которая принимает строку в качестве аргумента и устанавливает ее свойству name объекта One
+
 // type OneType = {
 //     name:string
 // }
@@ -311,8 +314,6 @@ window.helperObj =helperObj
 
 // @ts-ignore
 window.someFunction = sumFromObject
-
-
 
 // 3) Одной строкой установить с помощью helperObj объекту Two поле age в значение 30
 // window.helperObj.setAge.bind(window.ONE, 20)()
