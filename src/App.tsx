@@ -10,6 +10,7 @@ import {HomeWork6} from "./lessons/lesson6/HomeWork6";
 
 function App() {
   return (
+
     <div className="container">
       {/*<Lesson1 />*/}
       {/*/!*<Lesson3 />*!/*/}

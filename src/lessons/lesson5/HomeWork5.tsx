@@ -30,46 +30,60 @@ export const HomeWork5 = () => {
 // Функция должна вернуть строку `My name is ${name}. I am ${age}`, где name и age берутся из свойств объекта
 
 ////////////////////////////////////////////////
-// type someObjType = {
+//   type someObjType = {
 //     name: string;
 //     age: number;
-//     greeting: ()=>string
-// }
+//     greeting: () => string
+//   }
 //
-// function greeting  (this: someObjType)  {
-//
-//     let {age,name}=this
-//
-//     return `My name is ${name}. I am ${age}`
-//
-// }
-//
-// const someObj:someObjType = {
-//     name: 'Eugene',
-//     age: 32,
-//     greeting: greeting
-// }
-//
-// console.log(someObj.greeting())
-//
-//
-//
-// const someObj2:someObjType = {
-//     name: 'Eugene',
-//     age: 32,
-//     greeting(){
-//         return `My name is ${this.name}. I am ${this.age}`
-//     }
-// }
-//
-// console.log(someObj2.greeting())
+//   function greeting(this: any) {  // this можно типизировать в аргументах
+//     let {age, name, id} = this    // может определяться автоматически
+//     return `My name is ${name}. I am ${age} ` + id
+//   }
+
+
+  // const someObj3 = {
+  //   id: 10,
+  //   greeting: greeting
+  // }
+
+  // const someObj: someObjType = {
+  //   name: 'Eugene',
+  //   age: 32,
+  //   greeting: greeting
+  // }
+
+  // console.log(someObj3.greeting())
+  //
+  // const someObj2: someObjType = {
+  //   name: 'Eugene',
+  //   age: 32,
+  //   greeting() {
+  //     return 'hello'
+  //   }
+  // }
+  // const someObj5: someObjType = {
+  //   name: 'Andrew',
+  //   age: 28,
+  //   greeting() {
+  //     return 'hello5'
+  //   }
+  // }
+
+  // console.log(someObj3.greeting.call(someObj2))
+
+  // let foo = someObj3.greeting.bind(someObj2)
+  // foo = foo.bind(someObj5)
+
+  // console.log(foo())
+  // после сзвязывания мы не можем вызвать от другого объекта
 
 
 // можем ли мы создать стрелочную функцию отдельно и присвоить свойству объекта ?
 
-// const greeting2 = () => {
-//     return `My name is ${name}. I am ${age}`
-// }
+  // const greeting2 = () => {
+  //   return `My name is ${name}. I am ${age}`
+  // }
 
 
 // Task 02
@@ -81,41 +95,41 @@ export const HomeWork5 = () => {
 // rest current count - устанавливает значение счетчика равным 0
 // все методы должны ссылаться на сам объект
 
-// type newObjType = {
-//     counter: number
-//     getCurrentCount: ()=>void
-//     increment: ()=>void
-//     decrement: ()=>void
-//     setCurrentCount: ()=>void
-//     restCurrentCount: ()=>void
-// }
-//
-// let newObj:newObjType = {
-//     counter: 0,
-//     getCurrentCount (){
-//         console.log(this.counter)
-//     },
-//     increment() {
-//         this.counter = this.counter + 1
-//     },
-//     decrement(){
-//         this.counter = this.counter - 1
-//     },
-//     setCurrentCount(){
-//         let newCounter = prompt('type counter')
-//         if(newCounter){
-//             this.counter = Number(newCounter)
-//         }
-//     },
-//     restCurrentCount(){
-//         this.counter = 0
-//     }
-// }
-// // короче function(){} ссылается на объект вызова, на окружение
-// // @ts-ignore
-// window.counter = 10
-// // @ts-ignore
-// window.newObj = newObj
+  type newObjType = {
+    counter: number
+    getCurrentCount: () => void
+    increment: () => void
+    decrement: () => void
+    setCurrentCount: () => void
+    restCurrentCount: () => void
+  }
+
+  let newObj: newObjType = {
+    counter: 0,
+    getCurrentCount() {
+      console.log(this.counter)
+    },
+    increment() {
+      this.counter = this.counter + 1
+    },
+    decrement() {
+      this.counter = this.counter - 1
+    },
+    setCurrentCount() {
+      let newCounter = prompt('type counter')
+      if (newCounter) {
+        this.counter = Number(newCounter)
+      }
+    },
+    restCurrentCount() {
+      this.counter = 0
+    }
+  }
+// короче function(){} ссылается на объект вызова, на окружение
+// @ts-ignore
+  window.counter = 10
+// @ts-ignore
+  window.newObj = newObj
 
 
 // Task 03
@@ -307,13 +321,13 @@ export const HomeWork5 = () => {
 // console.log(One)
 
 // @ts-ignore
-window.ONE = One
+// window.ONE = One
 
 // @ts-ignore
-window.helperObj =helperObj
+// window.helperObj =helperObj
 
 // @ts-ignore
-window.someFunction = sumFromObject
+// window.someFunction = sumFromObject
 
 // 3) Одной строкой установить с помощью helperObj объекту Two поле age в значение 30
 // window.helperObj.setAge.bind(window.ONE, 20)()
@@ -412,14 +426,14 @@ window.someFunction = sumFromObject
 //
 //         Таким образом, когда мы запускаем user.g(), исходная функция вызывается с this=null.
 
-    ///////////////////////////////
+  ///////////////////////////////
 // just a plug
 // export default () => {};
 
-    return (
-        <h2>
-           LESSON 5
-        </h2>
-    );
+  return (
+    <h2>
+      LESSON 5
+    </h2>
+  );
 }
 
