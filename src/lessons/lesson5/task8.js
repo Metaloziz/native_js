@@ -47,3 +47,4 @@ console.log(Two);
 
 
 // window.helperObj.setAge.bind(window.ONE, 20)()
+

@@ -8,6 +8,9 @@
 // все методы должны ссылаться на сам объект
 
 let newObj = {
+
+  // this = counter
+
   counter: 0,
   getCurrentCount() {
     console.log(this.counter)

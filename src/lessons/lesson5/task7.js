@@ -14,3 +14,6 @@ const bindNumber = (fn, N) => {
 }
 console.log(bindNumber(sumTwoNumbers, 10)())
 
+export const bindNumber2 = (func,x) => {
+  return func.bind(null,x)
+}

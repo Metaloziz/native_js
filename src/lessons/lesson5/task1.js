@@ -4,9 +4,15 @@
 
 
 function greeting() {  // this можно типизировать в аргументах
-    let {age, name, id} = this    // может определяться автоматически
-    return `My name is ${name}. I am ${age} ` + id
-  }
+  console.log(this)
+  let {age, name, id} = this    // может определяться автоматически
+  return `My name is ${name}. I am ${age} ` + id
+}
+
+const greeting2 = () => {  // this можно типизировать в аргументах
+  let {age, name, id} = this    // может определяться автоматически
+  return `My name is ${name}. I am ${age} ` + id
+}
 
 
 const someObj3 = {
@@ -19,6 +25,7 @@ const someObj = {
   age: 32,
   greeting: greeting
 }
+// console.log(greeting2.call(someObj));
 
 console.log(someObj3.greeting())
 
@@ -37,14 +44,13 @@ const someObj5 = {
   }
 }
 
-console.log(someObj3.greeting.call(someObj2))
+// console.log(someObj3.greeting.call(someObj2))
 
 let foo = someObj3.greeting.bind(someObj2)
 foo = foo.bind(someObj5)
 
-console.log(foo())
+// console.log(foo())
 // после сзвязывания мы не можем вызвать от другого объекта
-
 
 // можем ли мы создать стрелочную функцию отдельно и присвоить свойству объекта ?
 
