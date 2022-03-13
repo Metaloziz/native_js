@@ -1,3 +1,9 @@
+// Task 01
+// Создайте структуру с именем student, содержащую поля: имя и фамилия, номер группы, успеваемость (массив из пяти элементов).
+// Создать массив из десяти элементов такого типа, упорядочить записи по возрастанию среднего балла.
+// Добавить возможность вывода фамилий и номеров групп студентов, имеющих оценки, равные только 4 или 5.
+//
+
 class Student {
   constructor({name, secondName, group, marks}) {
     this.name = name
@@ -28,10 +34,10 @@ let group = [
     name: "Kate",
     secondName: "UUU",
     group: 48,
-    marks: [4, 4, 4, 5, 4]
+    marks: [5, 5, 5, 5, 5]
   })]
 
-console.log(group)
+// console.log(group)
 
 group.forEach((el) => {
 
@@ -41,3 +47,9 @@ group.forEach((el) => {
     el.mySecondName()
   }
 })
+
+group.sort((a, b) => {
+  return a.marks.reduce((acc, i) => acc + i) - b.marks.reduce((acc, i) => acc + i)
+})
+
+console.log(group)

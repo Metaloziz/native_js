@@ -36,10 +36,8 @@ class Time {
     let sec = ''
     this.sec < 10 ? sec = '0' + this.sec : sec = this.sec
 
-
     let min = ''
     this.min < 10 ? min = '0' + this.min : min = this.min
-
 
     let hou = ''
     this.hou < 10 ? hou = '0' + this.hou : hou = this.min
@@ -54,3 +52,6 @@ time.setTime(31, 12, 21)
 time.showTime()
 
 console.log(time);
+
+
+console.warn('error')
