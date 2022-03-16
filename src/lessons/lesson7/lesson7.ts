@@ -1,4 +1,4 @@
-console.log('Lesson 7');
+import './lesson_7'
 
 // __Proto__
 // https://learn.javascript.ru/prototype-inheritance
@@ -12,6 +12,7 @@ console.log('Lesson 7');
 
 // https://www.youtube.com/watch?v=aQkgUUmUJy4&t=21s
 // https://www.youtube.com/watch?v=b55hiUlhAzI
+
 
 
 //Task 01

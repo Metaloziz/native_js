@@ -3,6 +3,7 @@ import React from 'react'
 
 export const HomeWork6 = () => {
 
+
 // Class
 // https://learn.javascript.ru/classes
 // https://medium.com/front-stories/%D0%BA%D0%B0%D0%BA-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%D1%8E%D1%82-%D0%BA%D0%BB%D0%B0%D1%81%D1%81%D1%8B-%D0%B2-javascript-7978c0003f1d
@@ -15,71 +16,71 @@ export const HomeWork6 = () => {
 // Создать массив из десяти элементов такого типа, упорядочить записи по возрастанию среднего балла.
 // Добавить возможность вывода фамилий и номеров групп студентов, имеющих оценки, равные только 4 или 5.
 //
-  type StudentType = {
-    name: string
-    secondName: string
-    group: number
-    marks: NumberType []
-  }
-
-  type NumberType = 1 | 2 | 3 | 4 | 5
-
-  class Student {
-    name
-    secondName
-    group
-    marks
-
-    constructor({name, secondName, group, marks}: StudentType) {
-      this.name = name
-      this.secondName = secondName
-      this.group = group
-      this.marks = marks
-    }
-
-    mySecondName() {
-      console.log(this.name + ' ' + this.secondName + ' ' + this.group)
-    }
-  }
+//   type StudentType = {
+//     name: string
+//     secondName: string
+//     group: number
+//     marks: NumberType []
+//   }
+//
+//   type NumberType = 1 | 2 | 3 | 4 | 5
+//
+//   class Student {
+//     name
+//     secondName
+//     group
+//     marks
+//
+//     constructor({name, secondName, group, marks}: StudentType) {
+//       this.name = name
+//       this.secondName = secondName
+//       this.group = group
+//       this.marks = marks
+//     }
+//
+//     mySecondName() {
+//       console.log(this.name + ' ' + this.secondName + ' ' + this.group)
+//     }
+//   }
 
   // @ts-ignore
-  window.newObj = new Student({
-    name: "Andrew",
-    secondName: "G",
-    group: 3,
-    marks: [3, 3, 3, 3, 4]
-  })
-
-  let group = [
-    new Student({
-      name: "Mark",
-      secondName: "AAA",
-      group: 48,
-      marks: [5, 5, 5, 4, 5]
-    }),
-    new Student({
-      name: "Andrew",
-      secondName: "GGG",
-      group: 48,
-      marks: [3, 3, 3, 3, 4]
-    }),
-    new Student({
-      name: "Kate",
-      secondName: "UUU",
-      group: 48,
-      marks: [4, 4, 4, 5, 4]
-    })]
-
-  console.log(group)
-
-  group.forEach((el) => {
-
-    let result = el.marks.filter(mark => mark >= 4)
-
-    if (result.length > 4) {
-      el.mySecondName()
-    }
-  })
+  // window.newObj = new Student({
+  //   name: "Andrew",
+  //   secondName: "G",
+  //   group: 3,
+  //   marks: [3, 3, 3, 3, 4]
+  // })
+  //
+  // let group = [
+  //   new Student({
+  //     name: "Mark",
+  //     secondName: "AAA",
+  //     group: 48,
+  //     marks: [5, 5, 5, 4, 5]
+  //   }),
+  //   new Student({
+  //     name: "Andrew",
+  //     secondName: "GGG",
+  //     group: 48,
+  //     marks: [3, 3, 3, 3, 4]
+  //   }),
+  //   new Student({
+  //     name: "Kate",
+  //     secondName: "UUU",
+  //     group: 48,
+  //     marks: [4, 4, 4, 5, 4]
+  //   })]
+  //
+  // // console.log(group)
+  //
+  // group.forEach((el) => {
+  //
+  //   let result = el.marks.filter(mark => mark >= 4)
+  //
+  //   if (result.length > 4) {
+  //     el.mySecondName()
+  //   }
+  // })
 
 
 // Task 02
