@@ -9,7 +9,6 @@ type CatInfo = {
   }>
 }
 
-
 let cat1: Readonly<CatInfo> = {
   age: 10,
   breed: 'unless',
