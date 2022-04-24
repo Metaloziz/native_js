@@ -476,10 +476,53 @@
         compose(...functions) - соединяет несколько дополнений
         compose(applyMiddleware(thunk), DevTools.instrument()).
 
+### Saga
+    https://redux-saga.js.org/
+
+    Основаны на генераторах. В стор необходимо добавлять прослойку "sagaMiddleware".
+
+    Добавление слоя в стор:
+        import { createStore, applyMiddleware } from 'redux'
+        import createSagaMiddleware from 'redux-saga'
+
+        import reducer from './reducers'
+        import mySaga from './sagas'
+
+        const sagaMiddleware = createSagaMiddleware() // create the saga middleware
+
+        const store = createStore(
+          reducer,
+          applyMiddleware(sagaMiddleware)   // mount it on the Store
+        )
+
+        sagaMiddleware.run(mySaga)  // then run the saga
+
+    Вместо диспатча в генераторах работает pull. Асинхронную функцию вызывает call.
+    Есть функции watcher and worker - это таже санка. Только она запускается после
+    того как задиспатчили опрелённый экшен, который зарегистрировать в watcher.
+
+### GRAPHQL
+
+    Это синтаксис, который описывает как запрашивать данные. И в основном
+    используется клиентом для загрузки данныйх с сервера.
+
+    Отличие от оыбчного запроса:
+    У сервера есть один эндпоинт и даже если нам нужно только ID и NAME пользователя,
+    сервер все равно вернёт нам всё. GRAPHQL сервер же может доставать только
+    необходимые нам данные.
+
+    # Основные понятия:
+    SCHEMA - описание данных (условно типизация)
+    QUERY - конкретные ключ которые нам необходимы.
+    MUTATION - позволяет измененить данные, т.е. это аналог PUT, POST в HTTP.
+    SUBSCRIPTION - клиент в режиме реального времени слушает изменения в БД.
+    Основано на WebSocket
+
+    GRAPHQL - необходимо реализовать в виде сервера на любой платформе.
+
+
 
 
 Vanila JS
 Алгоритмические задачи.
 
-графQL
-Sagi
