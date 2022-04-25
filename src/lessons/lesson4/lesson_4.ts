@@ -9,13 +9,13 @@
 // В конструкторе промиса выведите в консоль сообщение "Promise is created".
 
 
-// let promise = new Promise((res, rej) => {
-//
-//     console.log("Promise is created")
-//
-// })
-//
-// console.log(promise)
+let promise = new Promise((res, rej) => {
+
+    console.log("Promise is created")
+
+})
+
+console.log(promise)
 
 
 // Task 02

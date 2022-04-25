@@ -529,6 +529,14 @@
     они находятся в нескольких источниках. Благодаря этому технология извлечения
     данных GraphQL удобнее и практичнее, чем REST.
 
+### Event-loop
+
+    # MacroTasks
+        setInterval
+        setTimeOut
+
+    # MicroTasks
+        .then/catch/finally
 
 
 
