@@ -8,11 +8,11 @@ function greeting() {
 
 
 function MyFirstConstructorFunc(name, age) {
-  return {
-    name: name,
-    age: age,
-    greeting: greeting
-  }
+
+  this.name = name
+  this.age = age
+  this.greeting = greeting
+
 }
 
 let newObj = new MyFirstConstructorFunc('Andrew', 28)

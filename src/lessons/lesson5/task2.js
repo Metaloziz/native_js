@@ -11,32 +11,36 @@ let newObj = {
   counter: 0,
   getCurrentCount() {
     console.log(this.counter)
+    return this
   },
   increment() {
     this.counter = this.counter + 1
+    return this
   },
   decrement() {
     this.counter = this.counter - 1
+    return this
   },
   setCurrentCount(newCounter) {
-    if (newCounter) {
+    if (newCounter > 0) {
       this.counter = Number(newCounter)
     }
+    return this
   },
   restCurrentCount() {
     this.counter = 0
+    return this
   }
 }
 // короче function(){} ссылается на объект вызова, на окружение
 
-newObj.getCurrentCount()
-newObj.increment()
-newObj.getCurrentCount()
-newObj.decrement()
-newObj.decrement()
-newObj.getCurrentCount()
-newObj.setCurrentCount(100)
-newObj.getCurrentCount()
-newObj.restCurrentCount()
-newObj.getCurrentCount()  // в конце заменить на стрелочную функцию
+newObj.getCurrentCount().increment().getCurrentCount()
+.decrement()
+.decrement()
+.getCurrentCount()
+.setCurrentCount(100)
+.setCurrentCount(-100)
+.getCurrentCount()
+.restCurrentCount()
+.getCurrentCount()  // в конце заменить на стрелочную функцию
 

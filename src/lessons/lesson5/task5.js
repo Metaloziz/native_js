@@ -5,6 +5,7 @@ let Two = {
   name: 'Two',
   sayHello(data) {
     console.log(`Hello, my name is ${this.name} ` + data)
+    return arguments[1]
   }
 };
 
