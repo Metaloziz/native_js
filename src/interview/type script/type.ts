@@ -29,4 +29,4 @@ let item2: Item2 = {
   name: 1
 }
 
-let arrItem: Item[] = [item1, item2, item3]
+// let arrItem: Item[] = [item1, item2, item3]

@@ -21,9 +21,9 @@ cat1 = {...cat1, breed: 'new value'}
 
 const cat2: Readonly<CatInfo> = {...cat1}
 
-cat1.breed = 'block'
+// cat1.breed = 'block'  // error
 
-cat1.obj.id = 1
+// cat1.obj.id = 1   // error
 
 // type T1 = InstanceType<CatInfo>;
 
@@ -63,6 +63,6 @@ interface BBBB {
 }
 
 let obj4: BBBB = {
-  age:23,
+  age: 23,
   id: 3
 }

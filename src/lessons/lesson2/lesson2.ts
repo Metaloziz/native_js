@@ -1,4 +1,6 @@
+// @ts-ignore
 console.log('lesson 2');
+
 
 // Lexical environment
 // http://jsflow.org/docs/lex-env/
@@ -24,6 +26,27 @@ console.log('lesson 2');
 // Task 01
 // Реализовать функцию sum которая суммирует 2 числа следующим образом sum(3)(6) === 9
 
+function fooooo(...args1: number[]) {
+
+
+  return function (...args2: number[]) {
+
+    let sum = 0
+    let newArr: number[] = args1.concat(args2)
+
+    newArr.forEach((el) => {
+      sum += el
+    })
+
+    return sum
+
+  }
+}
+
+// console.log(fooooo(1)(2))
+// console.log(fooooo(1,1,2)(2,2,3))
+
+
 // Task 02
 // Реализовать функцию makeCounter которая работает следующим образом:
 // const counter = makeCounter();
@@ -33,6 +56,26 @@ console.log('lesson 2');
 // counter2(); // 1
 // counter(); // 3
 
+// function makeCounter(): () => number {
+//   let count = 0
+//
+//   return () => {
+//
+//     return count += 1
+//
+//   }
+// }
+
+// let count = makeCounter()
+// console.log(count())
+// console.log(count())
+// console.log(count())
+// let count2 = makeCounter()
+// console.log(count2())
+// console.log(count2())
+// console.log(count2())
+
+
 // Task 03
 // Переписать функцию из Task 02 так, что бы она принимала число в качестве аргумента и это число было стартовым значением счетчика
 // и возвращала следующий объект методов:
@@ -40,6 +83,42 @@ console.log('lesson 2');
 // decrease: -1
 // reset: установить счетчик в 0;
 // set: установить счетчик в заданное значение;
+
+type CounterType = {
+  increase: () => number
+  decrease: () => number
+  reset: () => number
+  set: (newCount: number) => number
+}
+
+function makeCounter(start: number): CounterType {
+  let count = start
+
+  return {
+    increase: () => {
+      return count += 1
+    },
+    decrease: () => {
+      return count -= 1
+    },
+    reset: () => {
+      count = 0
+      return count
+    },
+    set: (newCount: number) => {
+      count = newCount
+      return count
+    }
+  }
+}
+
+// let count = makeCounter(0)
+// console.log(count.increase())
+// console.log(count.increase())
+// console.log(count.set(10))
+// console.log(count.decrease())
+// console.log(count.reset())
+
 
 // Task 04*
 // Реализовать функцию superSum которая принимает число в качестве аргумента, которое указывает на количество слагаемых
@@ -56,8 +135,7 @@ console.log('lesson 2');
 // Task 05
 // решить все задачи по рекурсии которые даны в конце статьи https://learn.javascript.ru/recursion
 
+
+
 // Task 06
 // написать функцию, которая повторяет функционал метода flat массива на всю глубину.
-
-// just a plug
-export default () => {};
