@@ -538,8 +538,7 @@
     # MicroTasks
         .then/catch/finally
 
+### Vanila JS
 
-
-Vanila JS
-Алгоритмические задачи.
+### Алгоритмические задачи.
 
