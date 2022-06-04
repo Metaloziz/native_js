@@ -16,3 +16,5 @@ defined in this specification. Some native objects are built-in;
 others may be constructed during the course of execution of an 
 ECMAScript program.
 In other words the built-ins like Math, Object, String, RegExp are native, as are any objects I make with object literals or function definitions. But host objects are the opposite. Sorry for the ramble.
+
+Repeated native JS from a file with tasks 
