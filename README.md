@@ -20,3 +20,5 @@ In other words the built-ins like Math, Object, String, RegExp are native, as ar
 Repeated native JS from a file with tasks 
 
 Repeated native JS from a book you don't know Java script 
+
+Read react documentation 
