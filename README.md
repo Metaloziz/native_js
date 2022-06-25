@@ -30,3 +30,7 @@ A closure is the combination of a function bundled together (enclosed) with refe
 Promise
 
 The Promise object represents the eventual completion (or failure) of an asynchronous operation and its resulting value.
+
+typeof
+
+The typeof operator returns a string indicating the type of the unevaluated operand.
