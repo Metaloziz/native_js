@@ -34,3 +34,7 @@ The Promise object represents the eventual completion (or failure) of an asynchr
 typeof
 
 The typeof operator returns a string indicating the type of the unevaluated operand.
+
+Classes
+
+Classes are a template for creating objects. They encapsulate data with code to work on that data. Classes in JS are built on prototypes but also have some syntax and semantics that are not shared with ES5 class-like semantics.
