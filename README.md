@@ -38,3 +38,7 @@ The typeof operator returns a string indicating the type of the unevaluated oper
 Classes
 
 Classes are a template for creating objects. They encapsulate data with code to work on that data. Classes in JS are built on prototypes but also have some syntax and semantics that are not shared with ES5 class-like semantics.
+
+WHAT IS ABSTRACTION?
+Do you ever drink Coffee? If you do, then there’s a good chance that you might have used a coffee machine in your life. The concept of abstraction is closely related to the principle of a coffee machine. You know that a coffee machine makes coffee, but you don’t need to know how it makes coffee. In short, all you need to know is about which buttons to press to make Coffee. You can use a button defined interface to make coffee, without needing to worry about the internal working of a machine.
+The same principle goes into the concept of an Object-oriented programming language. In simple words, it is a concept that is not associated with any particular instance.
