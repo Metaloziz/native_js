@@ -44,6 +44,10 @@ WHAT IS ABSTRACTION?
 Do you ever drink Coffee? If you do, then there’s a good chance that you might have used a coffee machine in your life. The concept of abstraction is closely related to the principle of a coffee machine. You know that a coffee machine makes coffee, but you don’t need to know how it makes coffee. In short, all you need to know is about which buttons to press to make Coffee. You can use a button defined interface to make coffee, without needing to worry about the internal working of a machine.
 The same principle goes into the concept of an Object-oriented programming language. In simple words, it is a concept that is not associated with any particular instance.
 
+WHAT IS ENCAPSULATION?
+
+It is a group of properties and members under a single class or Object. Programs can be really long and there can easily be a ton of moving parts in it. After some time it gets really tough to maintain all these objects without them running into complexity. This is where a primary principle like encapsulation comes into play. You can use this principle to encapsulate a set of objects into different classes. With this principle, you can prevent the repetition of code and also shorten the length of your code. You can look at encapsulation like a medicinal pill. All the medicine(Objects) are stored inside a pill (class) and you can consume it whenever needed.
+
 prototype and Object.getPrototypeOf
 
 JavaScript is a bit confusing for developers coming from Java or C++, as it's all dynamic, all runtime, and it has no classes at all. It's all just instances (objects). Even the "classes" we simulate are just a function object.
