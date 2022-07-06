@@ -51,6 +51,9 @@ It is a group of properties and members under a single class or Object. Programs
 WHAT IS INHERITANCE?
 It is the ability to acquire the properties of existing classes and create new ones. Inheritance allows you to reuse code without having to rewrite it in a program. One of the best features of Inheritance is the ability to shorten the code in a program. You can use this principle to inherit codes from another class and reuse it in a new class.
 
+WHAT IS POLYMORPHISM?
+Polymorphism refers to one name with many forms. It is the ability of one function to perform in different ways. In other words, it refers to an object’s ability to take on more than one single form.
+
 prototype and Object.getPrototypeOf
 
 JavaScript is a bit confusing for developers coming from Java or C++, as it's all dynamic, all runtime, and it has no classes at all. It's all just instances (objects). Even the "classes" we simulate are just a function object.
