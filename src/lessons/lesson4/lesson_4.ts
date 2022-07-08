@@ -196,40 +196,40 @@ export const RejectPromise = () => {
 // Получите результаты работы промисов, объедините свойства объектов
 // и выведите в консоль {name: 'Anna', age: 16, city: ''}
 //
-// let promise1 = new Promise((resolve, reject) => {
-//
-//     setTimeout(resolve, 2000, {name: "Anna"})
-//
-// })
-//
-// let promise2 = new Promise((resolve, reject) => {
-//
-//     setTimeout(resolve, 3000, {age: 16})
-//
-// })
-// let promise3 = new Promise((resolve, reject) => {
-//
-//     setTimeout(resolve, 4000, {city: ''})
-//
-// })
-// let promise4 = new Promise((resolve, reject) => {
-//
-//     setTimeout(resolve, 4000, {
-//         Nastya: 'Robot',
-//         location: {
-//             country: 'BL',
-//             city: "Minsk",
-//         }
-//     })
-//
-// })
-//
-//
-// Promise.all([promise1, promise2, promise3, promise4]).then((data: any) => {
-//
-//     console.log(Object.assign({}, ...data))
-//
-// })
+let promise1 = new Promise((resolve, reject) => {
+
+    setTimeout(resolve, 2000, {name: "Anna"})
+
+})
+
+let promise2 = new Promise((resolve, reject) => {
+
+    setTimeout(resolve, 3000, {age: 16})
+
+})
+let promise3 = new Promise((resolve, reject) => {
+
+    setTimeout(resolve, 4000, {city: ''})
+
+})
+let promise4 = new Promise((resolve, reject) => {
+
+    setTimeout(resolve, 4000, {
+        Nastya: 'Robot',
+        location: {
+            country: 'BL',
+            city: "Minsk",
+        }
+    })
+
+})
+
+
+Promise.all([promise1, promise2, promise3, promise4]).then((data: any) => {
+
+    console.log(Object.assign({}, ...data))
+
+})
 //
 //
 // // just a plug
