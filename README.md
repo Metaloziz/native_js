@@ -16,3 +16,44 @@ defined in this specification. Some native objects are built-in;
 others may be constructed during the course of execution of an 
 ECMAScript program.
 In other words the built-ins like Math, Object, String, RegExp are native, as are any objects I make with object literals or function definitions. But host objects are the opposite. Sorry for the ramble.
+
+Repeated native JS from a file with tasks 
+
+Repeated native JS from a book you don't know Java script 
+
+Read react documentation 
+
+Closures
+
+A closure is the combination of a function bundled together (enclosed) with references to its surrounding state (the lexical environment). In other words, a closure gives you access to an outer function's scope from an inner function. In JavaScript, closures are created every time a function is created, at function creation time.
+
+Promise
+
+The Promise object represents the eventual completion (or failure) of an asynchronous operation and its resulting value.
+
+typeof
+
+The typeof operator returns a string indicating the type of the unevaluated operand.
+
+Classes
+
+Classes are a template for creating objects. They encapsulate data with code to work on that data. Classes in JS are built on prototypes but also have some syntax and semantics that are not shared with ES5 class-like semantics.
+
+WHAT IS ABSTRACTION?
+
+Do you ever drink Coffee? If you do, then there’s a good chance that you might have used a coffee machine in your life. The concept of abstraction is closely related to the principle of a coffee machine. You know that a coffee machine makes coffee, but you don’t need to know how it makes coffee. In short, all you need to know is about which buttons to press to make Coffee. You can use a button defined interface to make coffee, without needing to worry about the internal working of a machine.
+The same principle goes into the concept of an Object-oriented programming language. In simple words, it is a concept that is not associated with any particular instance.
+
+WHAT IS ENCAPSULATION?
+
+It is a group of properties and members under a single class or Object. Programs can be really long and there can easily be a ton of moving parts in it. After some time it gets really tough to maintain all these objects without them running into complexity. This is where a primary principle like encapsulation comes into play. You can use this principle to encapsulate a set of objects into different classes. With this principle, you can prevent the repetition of code and also shorten the length of your code. You can look at encapsulation like a medicinal pill. All the medicine(Objects) are stored inside a pill (class) and you can consume it whenever needed.
+
+WHAT IS INHERITANCE?
+It is the ability to acquire the properties of existing classes and create new ones. Inheritance allows you to reuse code without having to rewrite it in a program. One of the best features of Inheritance is the ability to shorten the code in a program. You can use this principle to inherit codes from another class and reuse it in a new class.
+
+WHAT IS POLYMORPHISM?
+Polymorphism refers to one name with many forms. It is the ability of one function to perform in different ways. In other words, it refers to an object’s ability to take on more than one single form.
+
+prototype and Object.getPrototypeOf
+
+JavaScript is a bit confusing for developers coming from Java or C++, as it's all dynamic, all runtime, and it has no classes at all. It's all just instances (objects). Even the "classes" we simulate are just a function object.
