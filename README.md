@@ -55,3 +55,7 @@ It is the ability to acquire the properties of existing classes and create new o
 WHAT IS POLYMORPHISM?
 
 Polymorphism refers to one name with many forms. It is the ability of one function to perform in different ways. In other words, it refers to an object’s ability to take on more than one single form.
+
+Programming paradigms are a way to classify programming languages based on their features. Languages can be classified into multiple paradigms.
+
+Some paradigms are concerned mainly with implications for the execution model of the language, such as allowing side effects, or whether the sequence of operations is defined by the execution model. Other paradigms are concerned mainly with the way that code is organized, such as grouping a code into units along with the state that is modified by the code. Yet others are concerned mainly with the style of syntax and grammar.
