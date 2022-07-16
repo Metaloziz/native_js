@@ -74,3 +74,5 @@ In delegation, an object handles a request by delegating to a second object (the
 Functional design
 
 Functional Design is a paradigm used to simplify the design of hardware and software devices such as computer software. A functional design assures that each modular part of a device has only one responsibility and performs that responsibility with the minimum of side effects on other parts. Functionally designed modules tend to have low coupling.
+
+Builder is a creational design pattern that lets you construct complex objects step by step. The pattern allows you to produce different types and representations of an object using the same construction code.
