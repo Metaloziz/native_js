@@ -84,4 +84,5 @@ Builder is a creational design pattern that lets you construct complex objects s
 
 Abstract Factory is a creational design pattern that lets you produce families of related objects without specifying their concrete classes.
 
+Adapter is a structural design pattern that allows objects with incompatible interfaces to collaborate.
 
