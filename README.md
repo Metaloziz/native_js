@@ -95,3 +95,5 @@ Command is a behavioral design pattern that turns a request into a stand-alone o
 Repeat all
 
 Decorator is a structural design pattern that lets you attach new behaviors to objects by placing these objects inside special wrapper objects that contain the behaviors.
+
+Iterator is a behavioral design pattern that lets you traverse elements of a collection without exposing its underlying representation (list, stack, tree, etc.).
