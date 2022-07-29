@@ -103,3 +103,5 @@ Mediator is a behavioral design pattern that lets you reduce chaotic dependencie
 Builder is a creational design pattern that lets you construct complex objects step by step. The pattern allows you to produce different types and representations of an object using the same construction code.
 
 Prototype is a creational design pattern that lets you copy existing objects without making your code dependent on their classes.
+
+Composite is a structural design pattern that lets you compose objects into tree structures and then work with these structures as if they were individual objects.
