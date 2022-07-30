@@ -105,3 +105,5 @@ Builder is a creational design pattern that lets you construct complex objects s
 Prototype is a creational design pattern that lets you copy existing objects without making your code dependent on their classes.
 
 Composite is a structural design pattern that lets you compose objects into tree structures and then work with these structures as if they were individual objects.
+
+Memento is a behavioral design pattern that lets you save and restore the previous state of an object without revealing the details of its implementation.
