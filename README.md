@@ -107,3 +107,5 @@ Prototype is a creational design pattern that lets you copy existing objects wit
 Composite is a structural design pattern that lets you compose objects into tree structures and then work with these structures as if they were individual objects.
 
 Memento is a behavioral design pattern that lets you save and restore the previous state of an object without revealing the details of its implementation.
+
+Flyweight is a structural design pattern that lets you fit more objects into the available amount of RAM by sharing common parts of state between multiple objects instead of keeping all of the data in each object.
