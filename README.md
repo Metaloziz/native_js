@@ -1,4 +1,4 @@
-###Native.js
+### Native.js
 
 The term "native" is very overused in JavaScript.
 
@@ -63,11 +63,41 @@ Some paradigms are concerned mainly with implications for the execution model of
 In computer science, functional programming is a programming paradigm where programs are constructed by applying and composing functions. It is a declarative programming paradigm in which function definitions are trees of expressions that map values to other values, rather than a sequence of imperative statements which update the running state of the program.
 
 TypeScript is a programming language developed and maintained by Microsoft. It is a strict syntactical superset of JavaScript and adds optional static typing to the language. It is designed for the development of large applications and transpiles to JavaScript. As it is a superset of JavaScript, existing JavaScript programs are also valid TypeScript programs.
+____________________________________________________________________________________________________________________________________________________________________
 
-### The Catalog of Design Patterns
 
-## Factory Method 
+# The Catalog of Design Patterns
+
+## --- Creational patterns
+These patterns provide various object creation mechanisms, which increase flexibility and reuse of existing code.
+
+### Factory Method
 is a creational design pattern that provides an interface for creating objects in a superclass, but allows subclasses to alter the type of objects that will be created.
+
+### Abstract Factory
+is a creational design pattern that lets you produce families of related objects without specifying their concrete classes.
+
+### Builder 
+is a creational design pattern that lets you construct complex objects step by step. The pattern allows you to produce different types and representations of an object using the same construction code.
+
+### Prototype 
+is a creational design pattern that lets you copy existing objects without making your code dependent on their classes.
+
+### Singleton 
+is a creational design pattern that lets you ensure that a class has only one instance, while providing a global access point to this instance.
+
+
+
+
+## Adapter
+is a structural design pattern that allows objects with incompatible interfaces to collaborate.
+
+## Bridge 
+is a structural design pattern that lets you split a large class or a set of closely related classes into two separate hierarchies—abstraction and implementation—which can be developed independently of each other.
+
+## Chain of Responsibility 
+is a behavioral design pattern that lets you pass requests along a chain of handlers. Upon receiving a request, each handler decides either to process the request or to pass it to the next handler in the chain.
+
 
 Software design pattern
 In software engineering, a software design pattern is a general, reusable solution to a commonly occurring problem within a given context in software design. It is not a finished design that can be transformed directly into source or machine code. Rather, it is a description or template for how to solve a problem that can be used in many different situations. Design patterns are formalized best practices that the programmer can use to solve common problems when designing an application or system.
@@ -82,13 +112,7 @@ Functional Design is a paradigm used to simplify the design of hardware and soft
 
 Builder is a creational design pattern that lets you construct complex objects step by step. The pattern allows you to produce different types and representations of an object using the same construction code.
 
-Abstract Factory is a creational design pattern that lets you produce families of related objects without specifying their concrete classes.
 
-Adapter is a structural design pattern that allows objects with incompatible interfaces to collaborate.
-
-Bridge is a structural design pattern that lets you split a large class or a set of closely related classes into two separate hierarchies—abstraction and implementation—which can be developed independently of each other.
-
-Chain of Responsibility is a behavioral design pattern that lets you pass requests along a chain of handlers. Upon receiving a request, each handler decides either to process the request or to pass it to the next handler in the chain.
 
 Command is a behavioral design pattern that turns a request into a stand-alone object that contains all information about the request. This transformation lets you pass requests as a method arguments, delay or queue a request’s execution, and support undoable operations.
 
@@ -100,9 +124,9 @@ Iterator is a behavioral design pattern that lets you traverse elements of a col
 
 Mediator is a behavioral design pattern that lets you reduce chaotic dependencies between objects. The pattern restricts direct communications between the objects and forces them to collaborate only via a mediator object.
 
-Builder is a creational design pattern that lets you construct complex objects step by step. The pattern allows you to produce different types and representations of an object using the same construction code.
 
-Prototype is a creational design pattern that lets you copy existing objects without making your code dependent on their classes.
+
+
 
 Composite is a structural design pattern that lets you compose objects into tree structures and then work with these structures as if they were individual objects.
 
