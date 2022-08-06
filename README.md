@@ -112,3 +112,6 @@ is a structural design pattern that lets you provide a substitute or placeholder
 
 ## --- Behavioral patterns
 These patterns are concerned with algorithms and the assignment of responsibilities between objects.
+
+### State 
+is a behavioral design pattern that lets an object alter its behavior when its internal state changes. It appears as if the object changed its class.
