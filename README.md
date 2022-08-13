@@ -210,6 +210,9 @@ is a behavioral design pattern that lets you reduce chaotic dependencies between
 ### Memento 
 is a behavioral design pattern that lets you save and restore the previous state of an object without revealing the details of its implementation.
 
+### Template Method 
+is a behavioral design pattern that defines the skeleton of an algorithm in the superclass but lets subclasses override specific steps of the algorithm without changing its structure.
+
 ### State
 is a behavioral design pattern that lets an object alter its behavior when its internal
 state changes. It appears as if the object changed its class.
