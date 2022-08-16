@@ -110,7 +110,15 @@ TypeScript is a programming language developed and maintained by Microsoft. It i
 syntactical superset of JavaScript and adds optional static typing to the language. It is
 designed for the development of large applications and transpiles to JavaScript. As it is
 a superset of JavaScript, existing JavaScript programs are also valid TypeScript programs.
+
 ____________________________________________________________________________________________________________________________________________________________________
+
+# SOLID 
+
+## --- The single-responsibility principle: 
+"There should never be more than one reason for a class to change." In other words, every class should have only one responsibility.
+
+__________________________________________________________________________________________________________________________________________________________________
 
 # The Catalog of Design Patterns
 
