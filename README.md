@@ -118,6 +118,8 @@ ________________________________________________________________________________
 ## --- The single-responsibility principle: 
 "There should never be more than one reason for a class to change." In other words, every class should have only one responsibility.
 
+## --- The open–closed principle: 
+"Software entities ... should be open for extension, but closed for modification."
 __________________________________________________________________________________________________________________________________________________________________
 
 # The Catalog of Design Patterns
