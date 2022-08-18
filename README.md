@@ -113,13 +113,23 @@ a superset of JavaScript, existing JavaScript programs are also valid TypeScript
 
 ____________________________________________________________________________________________________________________________________________________________________
 
-# SOLID 
+# SOLID
 
-## --- The single-responsibility principle: 
-"There should never be more than one reason for a class to change." In other words, every class should have only one responsibility.
+## --- The single-responsibility principle:
 
-## --- The open–closed principle: 
+"There should never be more than one reason for a class to change." In other words, every
+class should have only one responsibility.
+
+## --- The open–closed principle:
+
 "Software entities ... should be open for extension, but closed for modification."
+
+## --- Liskov substitution principle:
+
+"Liskov's notion of a behavioural subtype defines a notion of substitutability for
+objects; that is, if S is a subtype of T, then objects of type T in a program may be
+replaced with objects of type S without altering any of the desirable properties of that
+program (e.g. correctness)."
 __________________________________________________________________________________________________________________________________________________________________
 
 # The Catalog of Design Patterns
@@ -204,35 +214,55 @@ These patterns are concerned with algorithms and the assignment of responsibilit
 between objects.
 
 ### Chain of Responsibility
+
 is a behavioral design pattern that lets you pass requests along a chain of handlers. Upon
 receiving a request, each handler decides either to process the request or to pass it to
 the next handler in the chain.
 
-### Command 
-is a behavioral design pattern that turns a request into a stand-alone object that contains all information about the request. This transformation lets you pass requests as a method arguments, delay or queue a request’s execution, and support undoable operations.
+### Command
 
-### Iterator 
-is a behavioral design pattern that lets you traverse elements of a collection without exposing its underlying representation (list, stack, tree, etc.).
+is a behavioral design pattern that turns a request into a stand-alone object that
+contains all information about the request. This transformation lets you pass requests as
+a method arguments, delay or queue a request’s execution, and support undoable operations.
 
-### Mediator 
-is a behavioral design pattern that lets you reduce chaotic dependencies between objects. The pattern restricts direct communications between the objects and forces them to collaborate only via a mediator object.
+### Iterator
 
-### Memento 
-is a behavioral design pattern that lets you save and restore the previous state of an object without revealing the details of its implementation.
+is a behavioral design pattern that lets you traverse elements of a collection without
+exposing its underlying representation (list, stack, tree, etc.).
 
-### Observer 
-is a behavioral design pattern that lets you define a subscription mechanism to notify multiple objects about any events that happen to the object they’re observing.
+### Mediator
+
+is a behavioral design pattern that lets you reduce chaotic dependencies between objects.
+The pattern restricts direct communications between the objects and forces them to
+collaborate only via a mediator object.
+
+### Memento
+
+is a behavioral design pattern that lets you save and restore the previous state of an
+object without revealing the details of its implementation.
+
+### Observer
+
+is a behavioral design pattern that lets you define a subscription mechanism to notify
+multiple objects about any events that happen to the object they’re observing.
 
 ### State
+
 is a behavioral design pattern that lets an object alter its behavior when its internal
 state changes. It appears as if the object changed its class.
 
 ### Strategy
+
 is a behavioral design pattern that lets you define a family of algorithms, put each of
 them into a separate class, and make their objects interchangeable.
 
-### Template Method 
-is a behavioral design pattern that defines the skeleton of an algorithm in the superclass but lets subclasses override specific steps of the algorithm without changing its structure.
+### Template Method
+
+is a behavioral design pattern that defines the skeleton of an algorithm in the superclass
+but lets subclasses override specific steps of the algorithm without changing its
+structure.
 
 ### Visitor
- is a behavioral design pattern that lets you separate algorithms from the objects on which they operate.
+
+is a behavioral design pattern that lets you separate algorithms from the objects on which
+they operate.
