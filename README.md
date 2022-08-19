@@ -130,6 +130,13 @@ class should have only one responsibility.
 objects; that is, if S is a subtype of T, then objects of type T in a program may be
 replaced with objects of type S without altering any of the desirable properties of that
 program (e.g. correctness)."
+
+## --- Interface segregation principle:
+
+In the field of software engineering, the interface segregation principle (ISP) states
+that no code should be forced to depend on methods it does not use. ISP splits
+interfaces that are very large into smaller and more specific ones so that clients will
+only have to know about the methods that are of interest to them.
 __________________________________________________________________________________________________________________________________________________________________
 
 # The Catalog of Design Patterns
