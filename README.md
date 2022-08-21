@@ -56,7 +56,13 @@ Classes are a template for creating objects. They encapsulate data with code to 
 that data. Classes in JS are built on prototypes but also have some syntax and semantics
 that are not shared with ES5 class-like semantics.
 
-WHAT IS ABSTRACTION?
+____________________________________________________________________________________________________________________________________________________________________
+
+# OOP — Object-oriented programming
+
+OOP (Object-oriented programming) is a programming paradigm based on the concept of "objects", which can contain data and code: data in the form of fields (often known as attributes or properties), and code, in the form of procedures (often known as methods).
+
+## WHAT IS ABSTRACTION?
 
 Do you ever drink Coffee? If you do, then there’s a good chance that you might have used a
 coffee machine in your life. The concept of abstraction is closely related to the
