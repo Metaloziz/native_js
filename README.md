@@ -56,11 +56,27 @@ Classes are a template for creating objects. They encapsulate data with code to 
 that data. Classes in JS are built on prototypes but also have some syntax and semantics
 that are not shared with ES5 class-like semantics.
 
+## The modern mode, "use strict"
+
+For a long time, JavaScript evolved without compatibility issues. New features were added
+to the language while old functionality didn’t change.
+
+That had the benefit of never breaking existing code. But the downside was that any
+mistake or an imperfect decision made by JavaScript’s creators got stuck in the language
+forever.
+
+This was the case until 2009 when ECMAScript 5 (ES5) appeared. It added new features to
+the language and modified some existing ones. To keep the old code working, most such
+modifications are off by default. You need to explicitly enable them with a special
+directive: "use strict".
+
 ____________________________________________________________________________________________________________________________________________________________________
 
 # OOP — Object-oriented programming
 
-OOP (Object-oriented programming) is a programming paradigm based on the concept of "objects", which can contain data and code: data in the form of fields (often known as attributes or properties), and code, in the form of procedures (often known as methods).
+OOP (Object-oriented programming) is a programming paradigm based on the concept of "
+objects", which can contain data and code: data in the form of fields (often known as
+attributes or properties), and code, in the form of procedures (often known as methods).
 
 ## WHAT IS ABSTRACTION?
 
@@ -146,8 +162,10 @@ only have to know about the methods that are of interest to them.
 
 ## --- Dependency inversion principle
 
-High-level modules should not import anything from low-level modules. Both should depend on abstractions (e.g., interfaces).
-Abstractions should not depend on details. Details (concrete implementations) should depend on abstractions.
+High-level modules should not import anything from low-level modules. Both should depend
+on abstractions (e.g., interfaces).
+Abstractions should not depend on details. Details (concrete implementations) should
+depend on abstractions.
 __________________________________________________________________________________________________________________________________________________________________
 
 # The Catalog of Design Patterns
