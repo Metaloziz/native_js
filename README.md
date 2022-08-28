@@ -107,7 +107,7 @@ needing to worry about the internal working of a machine.
 The same principle goes into the concept of an Object-oriented programming language. In
 simple words, it is a concept that is not associated with any particular instance.
 
-WHAT IS ENCAPSULATION?
+## WHAT IS ENCAPSULATION?
 
 It is a group of properties and members under a single class or Object. Programs can be
 really long and there can easily be a ton of moving parts in it. After some time it gets
@@ -118,14 +118,14 @@ prevent the repetition of code and also shorten the length of your code. You can
 encapsulation like a medicinal pill. All the medicine(Objects) are stored inside a pill (
 class) and you can consume it whenever needed.
 
-WHAT IS INHERITANCE?
+## WHAT IS INHERITANCE?
 
 It is the ability to acquire the properties of existing classes and create new ones.
 Inheritance allows you to reuse code without having to rewrite it in a program. One of the
 best features of Inheritance is the ability to shorten the code in a program. You can use
 this principle to inherit codes from another class and reuse it in a new class.
 
-WHAT IS POLYMORPHISM?
+## WHAT IS POLYMORPHISM?
 
 Polymorphism refers to one name with many forms. It is the ability of one function to
 perform in different ways. In other words, it refers to an object’s ability to take on
