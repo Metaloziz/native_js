@@ -159,6 +159,12 @@ KISS, an acronym for keep it simple stupid
 
 ____________________________________________________________________________________________________________________________________________________________________
 
+# DRY
+
+"Don't repeat yourself" (DRY) is a principle of software development aimed at reducing repetition of software patterns
+
+____________________________________________________________________________________________________________________________________________________________________
+
 # SOLID
 
 ## --- The single-responsibility principle:
