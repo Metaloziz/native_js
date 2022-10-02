@@ -28,29 +28,23 @@ In other words the built-ins like Math, Object, String, RegExp are native, as ar
 objects I make with object literals or function definitions. But host objects are the
 opposite. Sorry for the ramble.
 
-Repeated native JS from a file with tasks
-
-Repeated native JS from a book you don't know Java script
-
-Read react documentation
-
-Closures
+## Closures
 
 A closure is the combination of a function bundled together (enclosed) with references to
 its surrounding state (the lexical environment). In other words, a closure gives you
 access to an outer function's scope from an inner function. In JavaScript, closures are
 created every time a function is created, at function creation time.
 
-Promise
+## Promise
 
 The Promise object represents the eventual completion (or failure) of an asynchronous
 operation and its resulting value.
 
-typeof
+## typeof
 
 The typeof operator returns a string indicating the type of the unevaluated operand.
 
-Classes
+## Classes
 
 Classes are a template for creating objects. They encapsulate data with code to work on
 that data. Classes in JS are built on prototypes but also have some syntax and semantics
